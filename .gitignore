@@ -1,1 +1,4 @@
 Lab1/Hello.exe
+*.exe
+*.o
+*.out
