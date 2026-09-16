@@ -166,9 +166,9 @@ bool readFile(const string& filename, vector<string> & vec) {
  * as opposed to pass by value (vector<string> v0, vector<string> v1). 
  * 
  * What is the differennce between:
- * -  pass by reference (e.g. vector<string> & v0),
- * -  pass by value (e.g. vector<string> v0),
- * -  pass by const reference (e.g. const vector<string> & v0),
+ * -  pass by reference (e.g. vector<string> & v0), : pass by reference allows the function to modify the original vector, which is not desired in this case.
+ * -  pass by value (e.g. vector<string> v0), pass by value creates a copy of the vector, which can be inefficient for large vectors.
+ * -  pass by const reference (e.g. const vector<string> & v0), : pass by const reference allows the function to access the original vector without copying it, while also preventing any modifications to it. This is the most efficient and safe way to pass large vectors that do not need to be modified.
  */
 bool writeFile(const string& filename, const vector<string> & v0, const vector<string> & v1) {
 
