@@ -20,14 +20,14 @@ printf("Hits Taken: %i\t Luck: %f\t Exp: %f\t Level: %i\n", p2.getHitsTaken(), p
     //call setHitsTaken
 p2.setHitsTaken(3);
 
-    cout<< "\nP2 hits taken ";
+    cout<< "\nPlayer 2 hits taken ";
     //print out the hits taken
 cout << p2.getHitsTaken() << endl;
 
 cout << "O is dead, 1 is alive\n";
 
 //call isAlive
-cout <<"P1 " << p1.isAlive() << endl;
+cout <<"Player 1 " << p1.isAlive() << endl;
 cout <<"P2 " << p2.isAlive() << endl;
 return 0;
 
