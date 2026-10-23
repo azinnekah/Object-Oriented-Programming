@@ -11,6 +11,7 @@ using namespace std;
 class Game {
 public:
     Game(); //constructor
+   void generatePlayers(int n);
     int selectPlayer();
     void endRound(RPG* winner, RPG* loser, int loserIndex);
     void battleRound();

@@ -2,6 +2,7 @@
 
 #include <iostream>
 #include "RPG.h"
+#include "Game.h"
 
 using namespace std;
 
@@ -25,11 +26,17 @@ p2.setHitsTaken(3);
 cout << p2.getHitsTaken() << endl;
 
 cout << "O is dead, 1 is alive\n";
+Game game;
+    int num_players = 10;
 
+    game.generatePlayers(num_players);
+    game.gameLoop();
+    game.printFinalResults();
+
+    
 //call isAlive
 cout <<"Player 1 " << p1.isAlive() << endl;
 cout <<"P2 " << p2.isAlive() << endl;
 return 0;
 
-    
 }
